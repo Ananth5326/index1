@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="wrapper">
+    <div class="card">
+        <h2>Create Account</h2>
+        <p class="subtitle">Please fill in the details below</p>
+
+        <form id="registerForm">
+            <div class="field">
+                <input type="text" id="username" required>
+                <label>Username</label>
+                <span class="error" id="userError"></span>
+            </div>
+
+            <div class="field">
+                <input type="email" id="email" required>
+                <label>Email Address</label>
+                <span class="error" id="emailError"></span>
+            </div>
+
+            <div class="field">
+                <input type="password" id="password" required>
+                <label>Password</label>
+                <span class="error" id="passError"></span>
+            </div>
+
+            <button type="submit">Register</button>
+        </form>
+
+        <div class="success" id="successMsg"></div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
